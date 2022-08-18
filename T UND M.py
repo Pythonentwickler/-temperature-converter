@@ -17,38 +17,41 @@ convert_SI(1, 'cm', 'm')
 '''
 
 #temperature/measurement converter Program
-''''
-def print_menu():
-    print('1. Inches to Centimeters')
-    print('2. Inches to Meters')
-    print('3. Inches to Kilometers')
-
-def inch_cm():
-    inch = float (input('Enter a Number in inch : '))
-    cm = inch / 2.54
-    print(cm)
-
-def inch_m():
-    inch = float (input('Enter a Number in inch : '))
-    m = inch /0.0254 
-    print(m)
-    
-def inch_km():
-    inch = float (input('Enter a Number in inch : '))
-    km = inch /0.00003
-    print(km)
-
-print_menu()
+###################################
 
 
-choice = input('which conversion would you like to do?')
-if choice == '1' :
-    inch_cm()
-if choice == '2' :
-    inch_m()
-if choice == '3':
-    inch_km()
-'''
 
+while True :    
+    def print_menu():
+        print('1. Inches to Centimeters')
+        print('2. Inches to Meters')
+        print('3. Inches to Kilometers')
 
+    def inch_cm():
+        inch = float (input('Enter a Number in inch : '))
+        cm = inch / 2.54
+        print(cm)
+        print('-----------------------------')
+
+    def inch_m():
+        inch = float (input('Enter a Number in inch : '))
+        m = inch /0.0254 
+        print(m)
+        print('-----------------------------')
         
+    def inch_km():
+        inch = float (input('Enter a Number in inch : '))
+        km = inch /0.00003
+        print(km)
+        print('-----------------------------')
+
+    print_menu()
+
+
+    choice = input('which conversion would you like to do?')
+    if choice == '1' :
+        inch_cm()
+    if choice == '2' :
+        inch_m()
+    if choice == '3':
+        inch_km()
